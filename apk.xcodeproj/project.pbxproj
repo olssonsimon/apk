@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D1BA95516C2C0FE00A43815 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1BA95416C2C0FE00A43815 /* UIKit.framework */; };
+		5D1BA95716C2C0FE00A43815 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1BA95616C2C0FE00A43815 /* Foundation.framework */; };
+		5D1BA95916C2C0FE00A43815 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1BA95816C2C0FE00A43815 /* CoreGraphics.framework */; };
+		5D1BA95F16C2C0FE00A43815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BA95D16C2C0FE00A43815 /* InfoPlist.strings */; };
+		5D1BA96116C2C0FE00A43815 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BA96016C2C0FE00A43815 /* main.m */; };
+		5D1BA96516C2C0FE00A43815 /* apkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BA96416C2C0FE00A43815 /* apkAppDelegate.m */; };
+		5D1BA96716C2C0FE00A43815 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BA96616C2C0FE00A43815 /* Default.png */; };
+		5D1BA96916C2C0FE00A43815 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BA96816C2C0FE00A43815 /* Default@2x.png */; };
+		5D1BA96B16C2C0FE00A43815 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BA96A16C2C0FE00A43815 /* Default-568h@2x.png */; };
+		5D1BA96E16C2C0FE00A43815 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BA96C16C2C0FE00A43815 /* MainStoryboard.storyboard */; };
+		5D1BA97116C2C0FE00A43815 /* apkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BA97016C2C0FE00A43815 /* apkViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D1BA95116C2C0FE00A43815 /* apk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1BA95416C2C0FE00A43815 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5D1BA95616C2C0FE00A43815 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D1BA95816C2C0FE00A43815 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5D1BA95C16C2C0FE00A43815 /* apk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "apk-Info.plist"; sourceTree = "<group>"; };
+		5D1BA95E16C2C0FE00A43815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D1BA96016C2C0FE00A43815 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D1BA96216C2C0FE00A43815 /* apk-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "apk-Prefix.pch"; sourceTree = "<group>"; };
+		5D1BA96316C2C0FE00A43815 /* apkAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apkAppDelegate.h; sourceTree = "<group>"; };
+		5D1BA96416C2C0FE00A43815 /* apkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = apkAppDelegate.m; sourceTree = "<group>"; };
+		5D1BA96616C2C0FE00A43815 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5D1BA96816C2C0FE00A43815 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5D1BA96A16C2C0FE00A43815 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5D1BA96D16C2C0FE00A43815 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5D1BA96F16C2C0FE00A43815 /* apkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apkViewController.h; sourceTree = "<group>"; };
+		5D1BA97016C2C0FE00A43815 /* apkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = apkViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D1BA94E16C2C0FE00A43815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1BA95516C2C0FE00A43815 /* UIKit.framework in Frameworks */,
+				5D1BA95716C2C0FE00A43815 /* Foundation.framework in Frameworks */,
+				5D1BA95916C2C0FE00A43815 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D1BA94816C2C0FE00A43815 = {
+			isa = PBXGroup;
+			children = (
+				5D1BA95A16C2C0FE00A43815 /* apk */,
+				5D1BA95316C2C0FE00A43815 /* Frameworks */,
+				5D1BA95216C2C0FE00A43815 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D1BA95216C2C0FE00A43815 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BA95116C2C0FE00A43815 /* apk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D1BA95316C2C0FE00A43815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BA95416C2C0FE00A43815 /* UIKit.framework */,
+				5D1BA95616C2C0FE00A43815 /* Foundation.framework */,
+				5D1BA95816C2C0FE00A43815 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D1BA95A16C2C0FE00A43815 /* apk */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BA96316C2C0FE00A43815 /* apkAppDelegate.h */,
+				5D1BA96416C2C0FE00A43815 /* apkAppDelegate.m */,
+				5D1BA96C16C2C0FE00A43815 /* MainStoryboard.storyboard */,
+				5D1BA96F16C2C0FE00A43815 /* apkViewController.h */,
+				5D1BA97016C2C0FE00A43815 /* apkViewController.m */,
+				5D1BA95B16C2C0FE00A43815 /* Supporting Files */,
+			);
+			path = apk;
+			sourceTree = "<group>";
+		};
+		5D1BA95B16C2C0FE00A43815 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BA95C16C2C0FE00A43815 /* apk-Info.plist */,
+				5D1BA95D16C2C0FE00A43815 /* InfoPlist.strings */,
+				5D1BA96016C2C0FE00A43815 /* main.m */,
+				5D1BA96216C2C0FE00A43815 /* apk-Prefix.pch */,
+				5D1BA96616C2C0FE00A43815 /* Default.png */,
+				5D1BA96816C2C0FE00A43815 /* Default@2x.png */,
+				5D1BA96A16C2C0FE00A43815 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D1BA95016C2C0FE00A43815 /* apk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D1BA97416C2C0FE00A43815 /* Build configuration list for PBXNativeTarget "apk" */;
+			buildPhases = (
+				5D1BA94D16C2C0FE00A43815 /* Sources */,
+				5D1BA94E16C2C0FE00A43815 /* Frameworks */,
+				5D1BA94F16C2C0FE00A43815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = apk;
+			productName = apk;
+			productReference = 5D1BA95116C2C0FE00A43815 /* apk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D1BA94916C2C0FE00A43815 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = apk;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Kurious Koala";
+			};
+			buildConfigurationList = 5D1BA94C16C2C0FE00A43815 /* Build configuration list for PBXProject "apk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5D1BA94816C2C0FE00A43815;
+			productRefGroup = 5D1BA95216C2C0FE00A43815 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D1BA95016C2C0FE00A43815 /* apk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D1BA94F16C2C0FE00A43815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1BA95F16C2C0FE00A43815 /* InfoPlist.strings in Resources */,
+				5D1BA96716C2C0FE00A43815 /* Default.png in Resources */,
+				5D1BA96916C2C0FE00A43815 /* Default@2x.png in Resources */,
+				5D1BA96B16C2C0FE00A43815 /* Default-568h@2x.png in Resources */,
+				5D1BA96E16C2C0FE00A43815 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D1BA94D16C2C0FE00A43815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1BA96116C2C0FE00A43815 /* main.m in Sources */,
+				5D1BA96516C2C0FE00A43815 /* apkAppDelegate.m in Sources */,
+				5D1BA97116C2C0FE00A43815 /* apkViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5D1BA95D16C2C0FE00A43815 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D1BA95E16C2C0FE00A43815 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5D1BA96C16C2C0FE00A43815 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D1BA96D16C2C0FE00A43815 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D1BA97216C2C0FE00A43815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5D1BA97316C2C0FE00A43815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D1BA97516C2C0FE00A43815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "apk/apk-Prefix.pch";
+				INFOPLIST_FILE = "apk/apk-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5D1BA97616C2C0FE00A43815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "apk/apk-Prefix.pch";
+				INFOPLIST_FILE = "apk/apk-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D1BA94C16C2C0FE00A43815 /* Build configuration list for PBXProject "apk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D1BA97216C2C0FE00A43815 /* Debug */,
+				5D1BA97316C2C0FE00A43815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D1BA97416C2C0FE00A43815 /* Build configuration list for PBXNativeTarget "apk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D1BA97516C2C0FE00A43815 /* Debug */,
+				5D1BA97616C2C0FE00A43815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D1BA94916C2C0FE00A43815 /* Project object */;
+}
