@@ -7,6 +7,7 @@
 //
 
 #import "apkViewController.h"
+#import "DataFetcher.h"
 
 @interface apkViewController ()
 
@@ -14,10 +15,18 @@
 
 @implementation apkViewController
 
+- (IBAction)searchButton:(id)sender {
+    DataFetcher* dataFetcher = [[DataFetcher alloc]init];
+    [dataFetcher startFetch];
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
 }
 
 - (void)didReceiveMemoryWarning
