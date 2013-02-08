@@ -7,6 +7,6 @@
         <attribute name="volume" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-3312" positionY="-12015" width="128" height="103"/>
+        <element name="Item" positionX="-5580" positionY="-13068" width="128" height="103"/>
     </elements>
 </model>

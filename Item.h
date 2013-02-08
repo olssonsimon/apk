@@ -12,9 +12,9 @@
 
 @interface Item : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * price;
-@property (nonatomic, retain) NSNumber * volume;
-@property (nonatomic, retain) NSNumber * alcohol;
-@property (nonatomic, retain) NSString * type;
+@property (nonatomic, retain) NSNumber *price;
+@property (nonatomic, retain) NSNumber *volume;
+@property (nonatomic, retain) NSNumber *alcohol;
+@property (nonatomic, retain) NSString *type;
 
 @end

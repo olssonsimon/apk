@@ -17,8 +17,7 @@
 
 - (IBAction)searchButton:(id)sender {
     DataFetcher* dataFetcher = [[DataFetcher alloc]init];
-    [dataFetcher startFetch];
-    
+    [dataFetcher startFetch];    
 }
 
 - (void)viewDidLoad

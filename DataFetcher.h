@@ -11,6 +11,7 @@
 @interface DataFetcher : NSObject <NSXMLParserDelegate>
 
 @property (nonatomic, strong) NSXMLParser *xmlParser;
+
 -(void) startFetch;
 
 @end
