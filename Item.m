@@ -2,7 +2,7 @@
 //  Item.m
 //  apk
 //
-//  Created by Simon Olsson on 2013-02-07.
+//  Created by Simon Olsson on 2013-02-09.
 //  Copyright (c) 2013 Kurious Koala. All rights reserved.
 //
 
@@ -11,9 +11,10 @@
 
 @implementation Item
 
-@dynamic price;
-@dynamic volume;
 @dynamic alcohol;
+@dynamic price;
 @dynamic type;
+@dynamic volume;
+@dynamic artikelID;
 
 @end

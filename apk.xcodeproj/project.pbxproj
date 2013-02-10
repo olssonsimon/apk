@@ -18,8 +18,11 @@
 		5D1BA96B16C2C0FE00A43815 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BA96A16C2C0FE00A43815 /* Default-568h@2x.png */; };
 		5D1BA96E16C2C0FE00A43815 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BA96C16C2C0FE00A43815 /* MainStoryboard.storyboard */; };
 		5D1BA97116C2C0FE00A43815 /* apkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BA97016C2C0FE00A43815 /* apkViewController.m */; };
+		5DDB437616C68473006E20B5 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB437516C68473006E20B5 /* DataController.m */; };
+		5DDB437916C6A6D6006E20B5 /* Item+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB437816C6A6D6006E20B5 /* Item+Create.m */; };
+		5DDB437C16C6AAEC006E20B5 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB437B16C6AAEC006E20B5 /* Item.m */; };
+		5DDB437F16C6B7EB006E20B5 /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB437E16C6B7EB006E20B5 /* SearchResultsViewController.m */; };
 		5DF8CBFB16C3B3700042B082 /* ApkModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8CBF916C3B3700042B082 /* ApkModel.xcdatamodeld */; };
-		5DF8CBFE16C3B5580042B082 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8CBFD16C3B5580042B082 /* Item.m */; };
 		5DF8CC0116C3B8310042B082 /* DataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8CC0016C3B8310042B082 /* DataFetcher.m */; };
 		5DF8CC0316C3C0B80042B082 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF8CC0216C3C0B80042B082 /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -41,9 +44,15 @@
 		5D1BA96D16C2C0FE00A43815 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5D1BA96F16C2C0FE00A43815 /* apkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apkViewController.h; sourceTree = "<group>"; };
 		5D1BA97016C2C0FE00A43815 /* apkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = apkViewController.m; sourceTree = "<group>"; };
+		5DDB437416C68473006E20B5 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		5DDB437516C68473006E20B5 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+		5DDB437716C6A6D6006E20B5 /* Item+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+Create.h"; sourceTree = "<group>"; };
+		5DDB437816C6A6D6006E20B5 /* Item+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+Create.m"; sourceTree = "<group>"; };
+		5DDB437A16C6AAEC006E20B5 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		5DDB437B16C6AAEC006E20B5 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		5DDB437D16C6B7EB006E20B5 /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
+		5DDB437E16C6B7EB006E20B5 /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
 		5DF8CBFA16C3B3700042B082 /* apkModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = apkModel.xcdatamodel; sourceTree = "<group>"; };
-		5DF8CBFC16C3B5580042B082 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		5DF8CBFD16C3B5580042B082 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		5DF8CBFF16C3B8310042B082 /* DataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFetcher.h; sourceTree = "<group>"; };
 		5DF8CC0016C3B8310042B082 /* DataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFetcher.m; sourceTree = "<group>"; };
 		5DF8CC0216C3C0B80042B082 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -99,6 +108,8 @@
 				5D1BA96316C2C0FE00A43815 /* apkAppDelegate.h */,
 				5D1BA96416C2C0FE00A43815 /* apkAppDelegate.m */,
 				5D1BA96C16C2C0FE00A43815 /* MainStoryboard.storyboard */,
+				5DDB437D16C6B7EB006E20B5 /* SearchResultsViewController.h */,
+				5DDB437E16C6B7EB006E20B5 /* SearchResultsViewController.m */,
 				5D1BA96F16C2C0FE00A43815 /* apkViewController.h */,
 				5D1BA97016C2C0FE00A43815 /* apkViewController.m */,
 				5D1BA95B16C2C0FE00A43815 /* Supporting Files */,
@@ -123,11 +134,15 @@
 		5DF8CBF816C3B2DA0042B082 /* core data */ = {
 			isa = PBXGroup;
 			children = (
-				5DF8CBFC16C3B5580042B082 /* Item.h */,
-				5DF8CBFD16C3B5580042B082 /* Item.m */,
 				5DF8CBF916C3B3700042B082 /* ApkModel.xcdatamodeld */,
+				5DDB437A16C6AAEC006E20B5 /* Item.h */,
+				5DDB437B16C6AAEC006E20B5 /* Item.m */,
 				5DF8CBFF16C3B8310042B082 /* DataFetcher.h */,
 				5DF8CC0016C3B8310042B082 /* DataFetcher.m */,
+				5DDB437416C68473006E20B5 /* DataController.h */,
+				5DDB437516C68473006E20B5 /* DataController.m */,
+				5DDB437716C6A6D6006E20B5 /* Item+Create.h */,
+				5DDB437816C6A6D6006E20B5 /* Item+Create.m */,
 			);
 			name = "core data";
 			path = ..;
@@ -204,8 +219,11 @@
 				5D1BA96516C2C0FE00A43815 /* apkAppDelegate.m in Sources */,
 				5D1BA97116C2C0FE00A43815 /* apkViewController.m in Sources */,
 				5DF8CBFB16C3B3700042B082 /* ApkModel.xcdatamodeld in Sources */,
-				5DF8CBFE16C3B5580042B082 /* Item.m in Sources */,
 				5DF8CC0116C3B8310042B082 /* DataFetcher.m in Sources */,
+				5DDB437616C68473006E20B5 /* DataController.m in Sources */,
+				5DDB437916C6A6D6006E20B5 /* Item+Create.m in Sources */,
+				5DDB437C16C6AAEC006E20B5 /* Item.m in Sources */,
+				5DDB437F16C6B7EB006E20B5 /* SearchResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

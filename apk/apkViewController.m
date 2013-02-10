@@ -16,8 +16,14 @@
 @implementation apkViewController
 
 - (IBAction)searchButton:(id)sender {
+    // Search the database for matching items
+    
+}
+
+- (IBAction)updateDatabaseButton:(id)sender {
     DataFetcher* dataFetcher = [[DataFetcher alloc]init];
-    [dataFetcher startFetch];    
+    [dataFetcher startFetch];
+    NSLog(@"Updating complete!");
 }
 
 - (void)viewDidLoad
@@ -26,12 +32,6 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.navigationController.navigationBar.barStyle = UIBarStyleBlackOpaque;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

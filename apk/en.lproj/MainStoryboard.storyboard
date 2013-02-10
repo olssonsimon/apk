@@ -72,7 +72,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="APK" id="BM8-wP-nsD">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Wsc-mA-ksT"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Wsc-mA-ksT">
+                            <connections>
+                                <action selector="updateDatabaseButton:" destination="2" id="a1t-r5-7ga"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
