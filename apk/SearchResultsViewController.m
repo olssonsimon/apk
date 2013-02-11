@@ -7,7 +7,7 @@
 //
 
 #import "SearchResultsViewController.h"
-
+#import "Item.h"
 @interface SearchResultsViewController ()
 
 @end
@@ -15,7 +15,7 @@
 @implementation SearchResultsViewController
 
 @synthesize fetchedResultsController = _fetchedResultsController;
-@synthesize database = _database;
+@synthesize apkdatabase = _apkdatabase;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,6 +27,7 @@
     return self;
 }
 
+
 - (void)setupFetchedResultsController // attaches an NSFetchRequest to this UITableViewController
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Item"];
@@ -34,14 +35,19 @@
     // no predicate because we want ALL the Items
     
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
-                                                                        managedObjectContext:self.database.managedObjectContext
+                                                                        managedObjectContext:self.apkdatabase.managedObjectContext
                                                                           sectionNameKeyPath:nil
                                                                                    cacheName:nil];
+    
+    NSError* error;
+    [self.fetchedResultsController performFetch:&error];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+        self.tableView.dataSource = self;
+    [self setupFetchedResultsController];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -63,14 +69,16 @@
 {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.tableView numberOfRowsInSection:1];
+//    return [self.tableView numberOfRowsInSection:1];
+    return [self.fetchedResultsController.fetchedObjects count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"apkCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+   Item* item = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", item.artikelID];
     // Configure the cell...
     
     return cell;

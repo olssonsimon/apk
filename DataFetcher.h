@@ -11,6 +11,8 @@
 @interface DataFetcher : NSObject <NSXMLParserDelegate>
 
 @property (nonatomic, strong) NSXMLParser *xmlParser;
+@property (nonatomic, strong) UIManagedDocument *database; //The UIManagedContext created in DataController.
+
 
 -(void) startFetch;
 

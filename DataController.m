@@ -70,11 +70,12 @@
     dispatch_async(fetchQ, ^{
         [self.database.managedObjectContext performBlock:^{
             [Item initItemWithName:name price:price volume:volume alcohol:alcohol type:type artikelID:articleID inManagedObjectContext:self.database.managedObjectContext];
-            NSLog(@"%f", articleID);
+//            NSLog(@"%f", articleID);
             [self.database saveToURL:self.database.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:NULL];
         }];
     });
 }
+
 
 //    dispatch_queue_t fetchQ = dispatch_queue_create("Systembolaget fetcher", NULL);
 //    dispatch_async(fetchQ, ^{

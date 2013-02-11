@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "DataFetcher.h"
 @interface apkViewController : UIViewController
-
+@property(nonatomic, strong) DataFetcher* fetcher;
 @end

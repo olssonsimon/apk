@@ -7,7 +7,8 @@
 //
 
 #import "apkViewController.h"
-#import "DataFetcher.h"
+#import "SearchResultsViewController.h"
+
 
 @interface apkViewController ()
 
@@ -20,10 +21,24 @@
     
 }
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"Apk to Results"]) {
+        //KANSKE BLIR FEL SET METOD?!..
+//        [segue.destinationViewController setApkdatabase:self.fetcher.database];
+        if(self.fetcher.database == nil) {
+            NSLog(@"Är NIL");
+        }
+        [segue.destinationViewController setApkdatabase:self.fetcher.database];
+    }
+}
+
 - (IBAction)updateDatabaseButton:(id)sender {
-    DataFetcher* dataFetcher = [[DataFetcher alloc]init];
-    [dataFetcher startFetch];
+   self.fetcher = [[DataFetcher alloc]init];
+    [self.fetcher startFetch];
+    
     NSLog(@"Updating complete!");
+    
 }
 
 - (void)viewDidLoad

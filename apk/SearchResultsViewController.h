@@ -12,6 +12,6 @@
 @interface SearchResultsViewController : UITableViewController<NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (nonatomic, strong) UIManagedDocument *database;
+@property (nonatomic, strong) UIManagedDocument *apkdatabase;
 
 @end

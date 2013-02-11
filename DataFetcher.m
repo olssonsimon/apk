@@ -8,7 +8,7 @@
 
 #import "DataFetcher.h"
 #import "DataController.h"
-
+#define NUMBER_OF_RESULTS 100
 @interface DataFetcher ()
 
 @property (nonatomic, strong) NSMutableString *currentName;
@@ -18,6 +18,8 @@
 @property (nonatomic, strong) NSMutableString *currentProperty;
 @property (nonatomic, strong) NSMutableString *currentType;
 @property (nonatomic, strong) NSMutableString *currentArticleID;
+
+@property int number; 
 
 
 @property BOOL isName;
@@ -54,8 +56,20 @@
 {
     if(self = [super init]) {
         self.dataController = [[DataController alloc]init];
+        self.number = 1;
     }
     return self;
+}
+
+-(UIManagedDocument*) database
+{
+    if(self.dataController == nil) {
+        return nil;
+    }
+    else {
+        return self.dataController.database;
+    }
+    
 }
 - (void) startFetch
 {
@@ -102,28 +116,33 @@
 - (void) parser:(NSXMLParser *) parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
     if([elementName isEqualToString:@"artikel"]) {
-//        NSLog(@"Namn: %@", self.currentName);
-//        NSLog(@"Type: %@", self.currentType);
-//        NSLog(@"Price: %@", self.currentPrice);
-//        NSLog(@"Volume: %@", self.currentVolume);
-//        NSLog(@"Alcohol: %@", self.currentAlcohol);
-//        NSLog(@"     ");
+        //        NSLog(@"Namn: %@", self.currentName);
+        //        NSLog(@"Type: %@", self.currentType);
+        //        NSLog(@"Price: %@", self.currentPrice);
+        //        NSLog(@"Volume: %@", self.currentVolume);
+        //        NSLog(@"Alcohol: %@", self.currentAlcohol);
+        //        NSLog(@"     ");
         
         // Insert the item into the core data
-//        DataController *dataController = [[DataController alloc] init];
-//        [dataController insertItemIntoCoreData:self.currentName price:self.currentPrice volume:self.currentVolume alcohol:self.currentAlcohol type:self.currentType];
+        //        DataController *dataController = [[DataController alloc] init];
+        //        [dataController insertItemIntoCoreData:self.currentName price:self.currentPrice volume:self.currentVolume alcohol:self.currentAlcohol type:self.currentType];
         
         // The item is done
         // NSLog(@"Item complete: %@", self.currentName);
         
         [self.dataController fetchItemWithAritcleID:[self.currentArticleID doubleValue] name:self.currentName alcohol:[self.currentAlcohol doubleValue] price:[self.currentPrice doubleValue] volume:[self.currentVolume doubleValue] type:self.currentType];
-        
+        //self.number ++;
+     /*   if(self.number >= NUMBER_OF_RESULTS) {
+            [self.xmlParser abortParsing];
+        }
+        */
         self.currentAlcohol = nil;
         self.currentName = nil;
         self.currentPrice = nil;
         self.currentType = nil;
         self.currentVolume = nil;
         self.currentArticleID = nil;
+        
     }
     
     if([elementName isEqualToString:@"Namn"]) {
@@ -138,13 +157,13 @@
         self.isType = NO;
     } else if([elementName isEqualToString:@"Artikelid"]) {
         self.isArticleID = NO;
-    } else {
-        //Do nothing
-    }    
+    } else  if ([elementName isEqualToString:@"artiklar"]){
+        NSLog(@"Did end parsing");
+    }
 }
 
 - (void) parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
-{    
+{
     if (self.isAlcohol) {
         [self.currentAlcohol appendString:string];
     } else if (self.isName) {
@@ -160,6 +179,10 @@
     } else {
         //Do nothing
     }
+}
+-(void) parserDidEndDocument:(NSXMLParser *)parser
+{
+    NSLog(@"Slutade parsa");
 }
 
 @end

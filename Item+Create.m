@@ -29,6 +29,7 @@
                                                      inManagedObjectContext:context];
 
         item.artikelID = [NSNumber numberWithDouble:artikelID];
+        NSLog(@"ARTIKELID: %@", item.artikelID);
     } else {
         item = [items lastObject];
     }
