@@ -63,36 +63,17 @@
 
 - (void)fetchItemWithAritcleID:(double)articleID name:(NSString *)name alcohol:(double)alcohol price:(double)price volume:(double)volume type:(NSString *)type
 {
-    // NSLog(@"Fetching item: %@", name);
+//    NSLog(@"Fetching item: %@", name);
     
     // Added a queue so items only are added once
-    dispatch_queue_t fetchQ = dispatch_queue_create("Systembolaget fetcher", NULL);
-    dispatch_async(fetchQ, ^{
+//    dispatch_queue_t fetchQ = dispatch_queue_create("Systembolaget fetcher", NULL);
+//    dispatch_async(fetchQ, ^{
         [self.database.managedObjectContext performBlock:^{
             [Item initItemWithName:name price:price volume:volume alcohol:alcohol type:type artikelID:articleID inManagedObjectContext:self.database.managedObjectContext];
             NSLog(@"%f", articleID);
-            [self.database saveToURL:self.database.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:NULL];
+//            [self.database saveToURL:self.database.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:NULL];
         }];
-    });
-}
-
-//    dispatch_queue_t fetchQ = dispatch_queue_create("Systembolaget fetcher", NULL);
-//    dispatch_async(fetchQ, ^{
-////        NSArray *items = [FlickrFetcher recentGeoreferencedPhotos];
-//        [document.managedObjectContext performBlock:^{ // perform in the NSMOC's safe thread (main thread)
-//            for (NSDictionary *flickrInfo in photos) {
-//                [Photo photoWithFlickrInfo:flickrInfo inManagedObjectContext:document.managedObjectContext];
-//                // table will automatically update due to NSFetchedResultsController's observing of the NSMOC
-//            }
-//            // should probably saveToURL:forSaveOperation:(UIDocumentSaveForOverwriting)completionHandler: here!
-//            // we could decide to rely on UIManagedDocument's autosaving, but explicit saving would be better
-//            // because if we quit the app before autosave happens, then it'll come up blank next time we run
-//            // this is what it would look like (ADDED AFTER LECTURE) ...
-//            [document saveToURL:document.fileURL forSaveOperation:UIDocumentSaveForOverwriting completionHandler:NULL];
-//            // note that we don't do anything in the completion handler this time
-//        }];
 //    });
-//    dispatch_release(fetchQ);
-
+}
 
 @end

@@ -102,19 +102,8 @@
 - (void) parser:(NSXMLParser *) parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
     if([elementName isEqualToString:@"artikel"]) {
-//        NSLog(@"Namn: %@", self.currentName);
-//        NSLog(@"Type: %@", self.currentType);
-//        NSLog(@"Price: %@", self.currentPrice);
-//        NSLog(@"Volume: %@", self.currentVolume);
-//        NSLog(@"Alcohol: %@", self.currentAlcohol);
-//        NSLog(@"     ");
-        
-        // Insert the item into the core data
-//        DataController *dataController = [[DataController alloc] init];
-//        [dataController insertItemIntoCoreData:self.currentName price:self.currentPrice volume:self.currentVolume alcohol:self.currentAlcohol type:self.currentType];
-        
         // The item is done
-        // NSLog(@"Item complete: %@", self.currentName);
+        NSLog(@"Item complete: %@", self.currentName);
         
         [self.dataController fetchItemWithAritcleID:[self.currentArticleID doubleValue] name:self.currentName alcohol:[self.currentAlcohol doubleValue] price:[self.currentPrice doubleValue] volume:[self.currentVolume doubleValue] type:self.currentType];
         

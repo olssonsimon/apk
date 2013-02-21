@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0E64A016CE54F300AA3B78 /* Spirits.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E649F16CE54F300AA3B78 /* Spirits.m */; };
+		5D0E64A316CE54F300AA3B78 /* Wine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E64A216CE54F300AA3B78 /* Wine.m */; };
+		5D0E64A616CE54F300AA3B78 /* Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E64A516CE54F300AA3B78 /* Other.m */; };
+		5D0E64A916CE54F300AA3B78 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E64A816CE54F300AA3B78 /* Item.m */; };
+		5D0E64AC16CE54F300AA3B78 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E64AB16CE54F300AA3B78 /* Beer.m */; };
+		5D0E64AF16CE552700AA3B78 /* Beer+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E64AE16CE552600AA3B78 /* Beer+Create.m */; };
+		5D0E64B216CE553400AA3B78 /* Other+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E64B116CE553400AA3B78 /* Other+Create.m */; };
+		5D0E64B516CE554000AA3B78 /* Spirits+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E64B416CE554000AA3B78 /* Spirits+Create.m */; };
+		5D0E64B816CE554F00AA3B78 /* Wine+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0E64B716CE554E00AA3B78 /* Wine+Create.m */; };
 		5D1BA95516C2C0FE00A43815 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1BA95416C2C0FE00A43815 /* UIKit.framework */; };
 		5D1BA95716C2C0FE00A43815 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1BA95616C2C0FE00A43815 /* Foundation.framework */; };
 		5D1BA95916C2C0FE00A43815 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1BA95816C2C0FE00A43815 /* CoreGraphics.framework */; };
@@ -20,7 +29,6 @@
 		5D1BA97116C2C0FE00A43815 /* apkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BA97016C2C0FE00A43815 /* apkViewController.m */; };
 		5DDB437616C68473006E20B5 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB437516C68473006E20B5 /* DataController.m */; };
 		5DDB437916C6A6D6006E20B5 /* Item+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB437816C6A6D6006E20B5 /* Item+Create.m */; };
-		5DDB437C16C6AAEC006E20B5 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB437B16C6AAEC006E20B5 /* Item.m */; };
 		5DDB437F16C6B7EB006E20B5 /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB437E16C6B7EB006E20B5 /* SearchResultsViewController.m */; };
 		5DF8CBFB16C3B3700042B082 /* ApkModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8CBF916C3B3700042B082 /* ApkModel.xcdatamodeld */; };
 		5DF8CC0116C3B8310042B082 /* DataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF8CC0016C3B8310042B082 /* DataFetcher.m */; };
@@ -28,6 +36,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D0E649E16CE54F300AA3B78 /* Spirits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spirits.h; sourceTree = "<group>"; };
+		5D0E649F16CE54F300AA3B78 /* Spirits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spirits.m; sourceTree = "<group>"; };
+		5D0E64A116CE54F300AA3B78 /* Wine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wine.h; sourceTree = "<group>"; };
+		5D0E64A216CE54F300AA3B78 /* Wine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wine.m; sourceTree = "<group>"; };
+		5D0E64A416CE54F300AA3B78 /* Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
+		5D0E64A516CE54F300AA3B78 /* Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Other.m; sourceTree = "<group>"; };
+		5D0E64A716CE54F300AA3B78 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		5D0E64A816CE54F300AA3B78 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		5D0E64AA16CE54F300AA3B78 /* Beer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		5D0E64AB16CE54F300AA3B78 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beer.m; sourceTree = "<group>"; };
+		5D0E64AD16CE552600AA3B78 /* Beer+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+Create.h"; sourceTree = "<group>"; };
+		5D0E64AE16CE552600AA3B78 /* Beer+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+Create.m"; sourceTree = "<group>"; };
+		5D0E64B016CE553400AA3B78 /* Other+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Other+Create.h"; sourceTree = "<group>"; };
+		5D0E64B116CE553400AA3B78 /* Other+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Other+Create.m"; sourceTree = "<group>"; };
+		5D0E64B316CE554000AA3B78 /* Spirits+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Spirits+Create.h"; sourceTree = "<group>"; };
+		5D0E64B416CE554000AA3B78 /* Spirits+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Spirits+Create.m"; sourceTree = "<group>"; };
+		5D0E64B616CE554E00AA3B78 /* Wine+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Wine+Create.h"; sourceTree = "<group>"; };
+		5D0E64B716CE554E00AA3B78 /* Wine+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Wine+Create.m"; sourceTree = "<group>"; };
 		5D1BA95116C2C0FE00A43815 /* apk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1BA95416C2C0FE00A43815 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5D1BA95616C2C0FE00A43815 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,8 +74,6 @@
 		5DDB437516C68473006E20B5 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 		5DDB437716C6A6D6006E20B5 /* Item+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+Create.h"; sourceTree = "<group>"; };
 		5DDB437816C6A6D6006E20B5 /* Item+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+Create.m"; sourceTree = "<group>"; };
-		5DDB437A16C6AAEC006E20B5 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		5DDB437B16C6AAEC006E20B5 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		5DDB437D16C6B7EB006E20B5 /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
 		5DDB437E16C6B7EB006E20B5 /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
 		5DF8CBFA16C3B3700042B082 /* apkModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = apkModel.xcdatamodel; sourceTree = "<group>"; };
@@ -73,6 +97,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D0E64B916CE555D00AA3B78 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				5D0E64AA16CE54F300AA3B78 /* Beer.h */,
+				5D0E64AB16CE54F300AA3B78 /* Beer.m */,
+				5D0E64A716CE54F300AA3B78 /* Item.h */,
+				5D0E64A816CE54F300AA3B78 /* Item.m */,
+				5D0E64A416CE54F300AA3B78 /* Other.h */,
+				5D0E64A516CE54F300AA3B78 /* Other.m */,
+				5D0E64A116CE54F300AA3B78 /* Wine.h */,
+				5D0E64A216CE54F300AA3B78 /* Wine.m */,
+				5D0E649E16CE54F300AA3B78 /* Spirits.h */,
+				5D0E649F16CE54F300AA3B78 /* Spirits.m */,
+				5D0E64AD16CE552600AA3B78 /* Beer+Create.h */,
+				5D0E64AE16CE552600AA3B78 /* Beer+Create.m */,
+				5D0E64B016CE553400AA3B78 /* Other+Create.h */,
+				5D0E64B116CE553400AA3B78 /* Other+Create.m */,
+				5D0E64B316CE554000AA3B78 /* Spirits+Create.h */,
+				5D0E64B416CE554000AA3B78 /* Spirits+Create.m */,
+				5D0E64B616CE554E00AA3B78 /* Wine+Create.h */,
+				5D0E64B716CE554E00AA3B78 /* Wine+Create.m */,
+				5DDB437716C6A6D6006E20B5 /* Item+Create.h */,
+				5DDB437816C6A6D6006E20B5 /* Item+Create.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 		5D1BA94816C2C0FE00A43815 = {
 			isa = PBXGroup;
 			children = (
@@ -134,15 +185,12 @@
 		5DF8CBF816C3B2DA0042B082 /* core data */ = {
 			isa = PBXGroup;
 			children = (
+				5D0E64B916CE555D00AA3B78 /* Objects */,
 				5DF8CBF916C3B3700042B082 /* ApkModel.xcdatamodeld */,
-				5DDB437A16C6AAEC006E20B5 /* Item.h */,
-				5DDB437B16C6AAEC006E20B5 /* Item.m */,
 				5DF8CBFF16C3B8310042B082 /* DataFetcher.h */,
 				5DF8CC0016C3B8310042B082 /* DataFetcher.m */,
 				5DDB437416C68473006E20B5 /* DataController.h */,
 				5DDB437516C68473006E20B5 /* DataController.m */,
-				5DDB437716C6A6D6006E20B5 /* Item+Create.h */,
-				5DDB437816C6A6D6006E20B5 /* Item+Create.m */,
 			);
 			name = "core data";
 			path = ..;
@@ -222,8 +270,16 @@
 				5DF8CC0116C3B8310042B082 /* DataFetcher.m in Sources */,
 				5DDB437616C68473006E20B5 /* DataController.m in Sources */,
 				5DDB437916C6A6D6006E20B5 /* Item+Create.m in Sources */,
-				5DDB437C16C6AAEC006E20B5 /* Item.m in Sources */,
 				5DDB437F16C6B7EB006E20B5 /* SearchResultsViewController.m in Sources */,
+				5D0E64A016CE54F300AA3B78 /* Spirits.m in Sources */,
+				5D0E64A316CE54F300AA3B78 /* Wine.m in Sources */,
+				5D0E64A616CE54F300AA3B78 /* Other.m in Sources */,
+				5D0E64A916CE54F300AA3B78 /* Item.m in Sources */,
+				5D0E64AC16CE54F300AA3B78 /* Beer.m in Sources */,
+				5D0E64AF16CE552700AA3B78 /* Beer+Create.m in Sources */,
+				5D0E64B216CE553400AA3B78 /* Other+Create.m in Sources */,
+				5D0E64B516CE554000AA3B78 /* Spirits+Create.m in Sources */,
+				5D0E64B816CE554F00AA3B78 /* Wine+Create.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

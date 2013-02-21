@@ -12,26 +12,29 @@
 
 + (Item *) initItemWithName:(NSString *)name price:(double)price volume:(double)volume alcohol:(double)alcohol type:(NSString *)type artikelID:(double)artikelID inManagedObjectContext:(NSManagedObjectContext *)context
 {
-    Item *item = nil;
+//    Item *item = nil;
+//    
+//    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Item"];
+//    request.predicate = [NSPredicate predicateWithFormat:@"artikelID = %@", artikelID];
+//    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"artikelID" ascending:YES];
+//    request.sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+//    
+//    NSError *error = nil;
+//    NSArray *items = [context executeFetchRequest:request error:&error];
+//    
+//    if (!items || ([items count] > 1)) {
+//        // handle error
+//    } else if (![items count]) {
+//        item = [NSEntityDescription insertNewObjectForEntityForName:@"Item"
+//                                                     inManagedObjectContext:context];
+//
+//        item.artikelID = [NSNumber numberWithDouble:artikelID];
+//    } else {
+//        item = [items lastObject];
+//    }
     
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Item"];
-    request.predicate = [NSPredicate predicateWithFormat:@"artikelID = %@", artikelID];
-    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"artikelID" ascending:YES];
-    request.sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
-    
-    NSError *error = nil;
-    NSArray *items = [context executeFetchRequest:request error:&error];
-    
-    if (!items || ([items count] > 1)) {
-        // handle error
-    } else if (![items count]) {
-        item = [NSEntityDescription insertNewObjectForEntityForName:@"Item"
-                                                     inManagedObjectContext:context];
-
-        item.artikelID = [NSNumber numberWithDouble:artikelID];
-    } else {
-        item = [items lastObject];
-    }
+    Item *item = [NSEntityDescription insertNewObjectForEntityForName:@"Item" inManagedObjectContext:context];
+    item.artikelID = [NSNumber numberWithDouble:artikelID];
     
     return item;
 }

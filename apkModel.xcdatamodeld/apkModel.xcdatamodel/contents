@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Beer" representedClassName="Beer" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="beerRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="beerisA" inverseEntity="Item" syncable="YES"/>
+    </entity>
     <entity name="Item" representedClassName="Item" syncable="YES">
         <attribute name="alcohol" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="artikelID" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="volume" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="beerisA" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Beer" inverseName="beerRelationship" inverseEntity="Beer" syncable="YES"/>
+        <relationship name="otherisA" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Other" inverseName="otherRelationship" inverseEntity="Other" syncable="YES"/>
+        <relationship name="spiritisA" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Spirits" inverseName="spiritsRelationship" inverseEntity="Spirits" syncable="YES"/>
+        <relationship name="wineIsA" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Wine" inverseName="wineRelationship" inverseEntity="Wine" syncable="YES"/>
+    </entity>
+    <entity name="Other" representedClassName="Other" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="otherRelationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="otherisA" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Spirits" representedClassName="Spirits" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="spiritsRelationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="spiritisA" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Wine" representedClassName="Wine" syncable="YES">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="wineRelationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="wineIsA" inverseEntity="Item" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-5580" positionY="-13068" width="128" height="120"/>
+        <element name="Item" positionX="-6122" positionY="-14697" width="128" height="163"/>
+        <element name="Beer" positionX="-6410" positionY="-14616" width="128" height="73"/>
+        <element name="Wine" positionX="-6336" positionY="-14436" width="128" height="73"/>
+        <element name="Spirits" positionX="-6057" positionY="-14469" width="128" height="73"/>
+        <element name="Other" positionX="-5834" positionY="-14544" width="128" height="73"/>
     </elements>
 </model>
